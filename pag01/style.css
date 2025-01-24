@@ -1,3 +1,4 @@
+       /*VERSÃO MOBILE FIRST*/
 *{
     padding: 0px;
     margin: 0px;
@@ -10,7 +11,15 @@ body{
     flex-direction: column;
     min-height: 100vh;
     color: white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 main{
     min-width: 400px;
@@ -29,7 +38,7 @@ strong{
 
 h1{
     padding: 10px;
-    /* font-size: 36px; (h1)*/
+
 } 
 
 p{
@@ -40,6 +49,14 @@ p, a{
    /*  font-size: 24px; */
 }
 
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
 button{
     background-color: #22D4FD;
     border-radius: 16px;
@@ -47,13 +64,18 @@ button{
     
     margin: auto;
     width: 200px;
-    height: 50px;  
+    height: 45px;  
 }
 
 a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a:hover {
@@ -61,7 +83,7 @@ a:hover {
 }
 
 img {
-    width: 250px;
+    width: 260px;
     display: block;
     margin: auto;
 }
@@ -71,3 +93,55 @@ footer{
     margin: 0px;
     background-color: rgb(0, 0, 0);
 }
+/* -------------------------------------- */
+@media screen and (min-width: 767px) {
+    main{
+        background-color: rgb(0, 0, 0);
+        max-height: 500px;
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+
+    h1 {
+        font-size: 28px;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+    } 
+
+    img{
+        width: 40vw;
+        max-width: 350px;
+        /* margin-right: 0; */
+        height: auto;
+    }
+    
+    /* div{
+        align-items: flex-start;
+    } */
+
+    .button-container{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px; 
+    }
+   
+    }
+
+    button{
+        margin: 5px;
+        
+        
+    }
+
